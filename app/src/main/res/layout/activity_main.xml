@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".MainActivity">
+
+    <Button
+            android:text="Topla"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTopla"
+            style="@style/Widget.AppCompat.Button.Colored"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.303" android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtSayi2"/>
+    <Button
+            android:text="Çıkar"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCikar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.696" app:layout_constraintTop_toBottomOf="@+id/txtSayi2"
+            android:layout_marginBottom="13dp" app:layout_constraintBottom_toTopOf="@+id/btnBol"/>
+    <Button
+            android:text="Çarp"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCarp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.303" android:layout_marginTop="13dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnTopla"/>
+    <Button
+            android:text="Böl"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBol"
+            style="@style/Widget.AppCompat.Button.Colored"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.696" app:layout_constraintTop_toBottomOf="@+id/btnCikar"
+            android:layout_marginBottom="25dp" app:layout_constraintBottom_toTopOf="@+id/lblSonuc"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="213dp"
+            android:layout_height="0dp"
+            android:id="@+id/lblSonuc" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnBol"
+    />
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:inputType="textPersonName"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/txtSayi1" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            app:layout_constraintVertical_chainStyle="spread_inside"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/txtSayi2" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/txtSayi1"
+            android:layout_marginBottom="20dp" app:layout_constraintBottom_toTopOf="@+id/btnCikar"/>
+
+</android.support.constraint.ConstraintLayout>
